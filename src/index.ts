@@ -18,7 +18,7 @@ class ConsoleApp {
             this.app.makePayment(userOneAccount, userTwoAccount, 400);
             
             this.app.makePayment(userTwoAccount, userOneAccount, 200);
-            console.log(this.app.getTransactions(userOneAccount.getId()));
+            console.table(this.app.getTransactions(userTwoAccount.getId()));
         }
     }
 }
